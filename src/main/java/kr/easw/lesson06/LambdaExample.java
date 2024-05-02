@@ -83,5 +83,4 @@ public class LambdaExample {
         printer.accept(negative);
         return adjusted;
     }
-
 }
