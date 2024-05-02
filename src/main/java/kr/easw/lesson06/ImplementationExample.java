@@ -41,15 +41,25 @@ public class ImplementationExample {
     }
 
 
-    static class Cat {
+    final static class Cat implements Animal{
         private void meow() {
             System.out.println("Meow!");
         }
+
+        @Override
+        public void speak() {
+            meow();
+        }
     }
 
-    static class Horse {
+    final static class Horse implements Animal{
         private void neigh() {
             System.out.println("Neigh!");
+        }
+
+        @Override
+        public void speak() {
+            neigh();
         }
     }
 }
